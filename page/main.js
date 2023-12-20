@@ -10,7 +10,7 @@ function login() {
   }
   else {
     alert("Đăng nhập thành công!")
-    window.location.href = "/index.html"
+    window.location.href = "/WebCk1/index.html"
   }
 }
 
