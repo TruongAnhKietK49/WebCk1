@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thanhtoan.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Thanh toán giỏ hàng</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="img/Logo.png" alt="">
+        <a href="/index.html">Trang chủ</a>
+        <a href="">Giỏ hàng</a>
+        <a href="">Thanh toán</a>
+        <a href="Contact&Support.html">Tư vấn hỗ trợ</a>
+    </div>
+    <div class="payment">
+        <div class="cart">
+            Giỏ hàng <br>
+            <ion-icon class="icon" name="cart-outline"></ion-icon>
+        </div>
+        <div class="local">
+            Địa chỉ nhận hàng <br>
+            <ion-icon class="icon" name="location-outline"></ion-icon>
+        </div>
+        <div class="card">
+            Thanh toán <br>
+            <ion-icon class="icon" name="card-outline"></ion-icon>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="payment-content row">
+                <div class="payment-content-left">
+                    <div class="payment-content-left-method-delivery">
+                        <p style="font-weight: bold; font-size: 25px;">Phương thức giao hàng</p>
+                        <div class="payment-content-left-method-delivery-item">
+                            <input checked name="method-payment" type="radio">
+                            <label for="" style="font-size: 20px;">Giao hàng chuyển phát nhanh</label>
+                            <input checked name="method-payment" type="radio">
+                            <label for="" style="font-size: 20px;">Giao hàng tiết kiệm</label>
+                        </div>
+                    </div>
+                    <div class="payment-content-left-method-payment">
+                        <p style="font-weight: bold; font-size: 25px;">Phương thức thanh toán</p>
+                        <p style="font-size: 20px;">Mọi giao dịch đều được bảo mật và mã hóa. thông tin thẻ tín dụng sẽ
+                            không bao giờ được lưu
+                            lại</p>
+                        <div class="paymet-content-left-method-select">
+                            <div class="payment-content-left-method-payment-item">
+                                <input checked name="method-paymen" type="radio">
+                                <label for="" style="font-size: 20px;">Thanh toán bằng thẻ ATM(OnePay)</label>
+                                <img src="img/ATM.jpg" alt="">
+                            </div>
+                            <div class="payment-content-left-method-payment-item">
+                                <input name="method-paymen" type="radio">
+                                <label for="" style="font-size: 20px;">Thanh toán MoMo</label>
+                                <img src="img/momo.jpg">
+                            </div>
+                            <div class="payment-content-left-method-payment-item">
+                                <input name="method-payment" type="radio">
+                                <label for="" style="font-size: 20px;">Thu tiền tận nơi</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="payment-content-right">
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                        <button><i class="fa-duotone fa-check"></i></button>
+                    </div>
+
+                    <div class="payment-content-right-button">
+                        <input type="text" placeholder="Mã cộng tác viên">
+                        <button><i class="fa-duotone fa-check"></i></button>
+                    </div>
+                    <div class="payment-content-right-mnv">
+                        <select name="" id="">
+                            <option value="">Chọn mã nhân viên thân thiết</option>
+                            <option value="">D345</option>
+                            <option value="">E345</option>
+                            <option value="">A345</option>
+                            <option value="">I345</option>
+                        </select>
+                    </div>
+                    <div class="payment-content-right-payment">
+                        <button>TIẾP TỤC THANH TOÁN</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

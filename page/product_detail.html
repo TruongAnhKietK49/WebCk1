@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="all.css">
+    <title>Product Detail</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="sale-img">
+            <img src="img/BIG-1200-44-1200x44.webp" alt="">
+        </div>
+        <div class="nav-logo">
+            <img src="img/Logo.png" alt="">
+            <a href="Contact&Support.html"><ion-icon name="call-outline"></ion-icon>Tư vấn & Hỗ trợ</a>
+            <b class="search">
+                <input type="text" name="" id="" placeholder="Bạn cần tìm gì?"><ion-icon name="search-outline"
+                    style="width: 20px; height: 20px; margin-top: 5px;"></ion-icon>
+            </b>
+            <a href="#">Tài khoản & Voucher</a>
+            <a href="#" id="adress-form"><ion-icon name="location-outline"></ion-icon>Cửa hàng gần bạn</a>
+            <a href="thanhtoan.html"><ion-icon name="bag-handle-outline"></ion-icon>Thanh toán giỏ hành</a>
+            <a href="login.html"><ion-icon name="logo-tux"></ion-icon>Đăng nhập</a>
+            <div class="adress-form">
+                <div class="adress-form-content">
+                    <h3>Chọn địa chỉnh của bạn <span id="adress-close">x Đóng</span> </h3>
+                    <form action="">
+                        <p>Chọn địa chỉ cửa hàng gần bạn, vui lòng chọn chính xác để tránh lãng phí thời gian của bạn!
+                        </p>
+                        <select name="" id="">
+                            <option value="">--Chọn địa điểm</option>
+                            <option value="">Hồ Chí Minh</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">--Chọn quận huyện</option>
+                            <option value="">Quận 1</option>
+                            <option value="">Quận 2</option>
+                            <option value="">Quận 3</option>
+                            <option value="">Quận 4</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">--Chọn phường/xã</option>
+                            <option value="">Phường 1</option>
+                            <option value="">Phường 2</option>
+                            <option value="">Phường 3</option>
+                            <option value="">Phường 4</option>
+                        </select>
+                        <input type="text" placeholder="Số nhà, Tên đường, ...">
+                        <button id="adress-btn-close">Xác nhận</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav-function" style="width: 100%;">
+            <ul>
+                <li><a href="/index.html">Trang Chủ</a></li>
+                <li><a href="#" class="list"><ion-icon name="phone-portrait-outline"></ion-icon>Điện Thoại
+                        <div class="menu">
+                            <div class="menu-1">
+                                <ul>
+                                    <li><a href="Samsung.html">Samsung</a></li>
+                                    <li><a href="Sony.html">Sony</a></li>
+                                    <li><a href="Nokia.html">Nokia</a></li>
+                                    <li><a href="Iphone.html">Iphone</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="Xiaomi.html">Xiaomi</a></li>
+                                    <li><a href="Redmi.html">Redmi</a></li>
+                                    <li><a href="Oppo.html">Oppo</a></li>
+                                    <li><a href="Vivo.html">Vivo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a></li>
+                <li><a href="Laptop.html">Laptop</a></li>
+                <li><a href="Ipad.html">Tablet</a></li>
+                <li><a href="Dongho.html">Đồng hồ</a></li>
+                <li><a href="#">Phụ kiện</a></li>
+                <li><a href="#">Sim, thẻ cào</a></li>
+                <li><a href="#">Dịch vụ tiện ích</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main role="main">
+        <!-- Block content - Đục lỗ trên giao diện bố cục chung, đặt tên là `content` -->
+        <div class="container mt-4">
+            <div id="thongbao" class="alert alert-danger d-none face" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+
+            <div class="card">
+                <div class="container-fliud">
+                    <form name="frmsanphamchitiet" id="frmsanphamchitiet" method="post" action="">
+                        <input type="hidden" name="sp_ma" id="sp_ma" value="5">
+                        <input type="hidden" name="sp_ten" id="sp_ten" value="Samsung Galaxy Tab 10.1 3G 16G">
+                        <input type="hidden" name="sp_gia" id="sp_gia" value="10990000.00">
+                        <input type="hidden" name="hinhdaidien" id="hinhdaidien" value="samsung-galaxy-tab-10.jpg">
+
+                        <div class="wrapper row">
+                            <div class="preview col-md-6">
+                                <div class="preview-pic tab-content">
+                                    <div class="tab-pane" id="pic-1">
+                                        <img src="img/Samsung Galaxy S23 Ultra 5G.jpg">
+                                    </div>
+                                    <div class="tab-pane" id="pic-2">
+                                        <img src="img/ipad1.jpg">
+                                    </div>
+                                    <div class="tab-pane active" id="pic-3">
+                                        <img src="img/Samsung Galaxy S23 Ultra 5G.jpg">
+                                    </div>
+                                </div>
+                                <ul class="preview-thumbnail nav nav-tabs">
+                                    <li class="active">
+                                        <a data-target="#pic-1" data-toggle="tab" class="">
+                                            <img src="img/Samsung Galaxy S23 Ultra 5G.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-2" data-toggle="tab" class="">
+                                            <img src="img/ipad1.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a data-target="#pic-3" data-toggle="tab" class="active">
+                                            <img src="img/laptop10.jpg.webp">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="details col-md-6">
+                                <h3 class="product-title">Samsung Galaxy Tab 10.1 3G 16G</h3>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="review-no">999 reviews</span>
+                                </div>
+                                <p class="product-description">Màn hình 10.1 inch cảm ứng đa điểm</p>
+                                <small class="text-muted">Giá cũ: <s><span>10,990,000.00 vnđ</span></s></small>
+                                <h4 class="price">Giá hiện tại: <span>10,990,000.00 vnđ</span></h4>
+                                <p class="vote"><strong>100%</strong> hàng <strong>Chất lượng</strong>, đảm bảo
+                                    <strong>Uy
+                                        tín</strong>!
+                                </p>
+                                <h5 class="sizes">sizes:
+                                    <span class="size" data-toggle="tooltip" title="cỡ Nhỏ">s</span>
+                                    <span class="size" data-toggle="tooltip" title="cỡ Trung bình">m</span>
+                                    <span class="size" data-toggle="tooltip" title="cỡ Lớn">l</span>
+                                    <span class="size" data-toggle="tooltip" title="cỡ Đại">xl</span>
+                                </h5>
+                                <h5 class="colors">colors:
+                                    <span class="color orange not-available" data-toggle="tooltip"
+                                        title="Hết hàng"></span>
+                                    <span class="color green"></span>
+                                    <span class="color blue"></span>
+                                </h5>
+                                <div class="form-group">
+                                    <label for="soluong">Số lượng đặt mua:</label>
+                                    <input type="number" class="form-control" id="soluong" name="soluong">
+                                </div>
+                                <div class="action">
+                                    <a class="add-to-cart btn btn-default" id="btnThemVaoGioHang">Thêm vào giỏ hàng</a>
+                                    <a class="like btn btn-default" href="#"><span class="fa fa-heart"> Mua
+                                            hàng</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="container-fluid">
+                    <h3>Thông tin chi tiết về Sản phẩm</h3>
+                    <div class="row">
+                        <div class="col">
+                            Vi xử lý Dual-core 1 Cortex-A9 tốc độ 1GHz
+                            Màn hình:
+
+                            IPS LCD6.74"HD+
+                            Hệ điều hành:
+
+                            Android 13
+                            Camera sau:
+
+                            Chính 50 MP & Phụ 2 MP
+                            Camera trước:
+
+                            8 MP
+                            Chip:
+
+                            MediaTek Helio G85
+                            RAM:
+
+                            4 GB
+                            Dung lượng lưu trữ:
+
+                            128 GB
+                            SIM:
+
+                            2 Nano SIMHỗ trợ 4G
+                            Pin, Sạc:
+
+                            5000 mAh18 W
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End block content -->
+    </main>
+    <div class="fooster">
+        <div class="fooster-top">
+            <div class="colum">
+                <ul>
+                    <li>Tích điểm Quà tặng VIP</li>
+                    <li>Lịch sử mua hàng</li>
+                    <li>Tìm hiểu về mua trả góp</li>
+                    <li>Chính sách bảo hành</li>
+                </ul>
+            </div>
+            <div class="colum">
+                <ul>
+                    <li>Giới thiệu công ty (MWG.vn)</li>
+                    <li>Tuyển dụng</li>
+                    <li>Gửi góp ý, khiếu nại</li>
+                    <li>Tìm siêu thị (3.184 shop)</li>
+                </ul>
+            </div>
+            <div class="colum">
+                <ul>
+                    <li><b>Tổng đài hỗ trợ</b> (Miễn phí gọi)</li>
+                    <li>Khiếu nại: <b style="color: rgb(0, 115, 255);">1800.1062</b> (8:00 - 21:30)</li>
+                    <li>Bảo hành: <b style="color: rgb(0, 115, 255);">1800.1064</b> (8:00 - 21:00)</li>
+                </ul>
+            </div>
+            <div class="colum">
+                <ul>
+                    <li><ion-icon class="fb" name="logo-facebook" style="color: rgb(0, 94, 255);"></ion-icon> 3386k Fan</li>
+                    <li><ion-icon class="youtube" name="logo-youtube" style="color: red;"></ion-icon> 2000k Đăng ký</li>
+                    <li><ion-icon class="mess" name="logo-wechat" style="color: green;"></ion-icon> 500 tin nhắn/ngày</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html> 

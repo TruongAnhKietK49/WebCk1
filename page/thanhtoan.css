@@ -1,0 +1,129 @@
+a {
+  text-decoration: none;
+}
+.navbar {
+  margin: 0 10%;
+  width: 80%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.navbar img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+.navbar a {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  padding: 20px;
+}
+.navbar a:nth-child(4) {
+  color: red;
+}
+.navbar a:hover {
+  color: crimson;
+  background: rgba(211, 144, 144, 0.8);
+  border-radius: 5px;
+}
+
+.payment {
+  margin: 5% 10%;
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 18px;
+  position: relative;
+}
+.icon {
+  border: 2px solid rgb(241, 212, 212);
+  padding: 5px;
+  border-radius: 20px;
+}
+.card .icon {
+  padding: 5px;
+  color: rgb(18, 163, 168);
+  border: 2px solid aqua;
+  border-radius: 20px;
+}
+
+.payment-content{
+  display: flex;
+}
+.paymet-content-left-method-select {
+  display: flex;
+}
+.payment-content-left{
+  width: 50%;
+  height: auto;
+  margin: 0 5%;
+}
+
+.payment-content-right {
+  width: 50%;
+  border-left: 2px solid #ddd;
+  padding-left: 12px;
+}
+
+.payment-content-right-button {
+display: flex;
+padding: 12px 0;
+}
+
+.payment-content-right-button input {
+  height: 30px;
+  width: 200px;
+  margin-right: 100px;
+  padding-left: 12px;
+}
+
+.payment-content-right-button button {
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.payment-content-right-mnv {
+  margin-top: 20px;
+}
+
+.payment-content-right-mnv select {
+  height: 30px;
+  width: auto;
+  color: #75758a;
+  padding-left: 12px;
+}
+
+.payment-content-right-payment {
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.payment-content-right-payment button {
+  height: 35px;
+  padding: 0 20px;
+  font-size: 12px;
+  cursor: pointer;
+  color: black;
+  transition: all 0.3s ease;
+  border: none;
+  border: 2px solid black;
+}
+
+.payment-content-right-payment button:hover {
+  background-color: black;
+  color:white;
+}
+
+
