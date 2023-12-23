@@ -4,13 +4,13 @@ function login() {
   let email = document.getElementById("email").value;
   let name = document.getElementById("name").value;
   let pass = document.getElementById("password").value;
-  if(email == '' || name == '' || pass == ''){
-    alert("Vui lòng điền đầy đủ thông")
-    return 0;
-  }
-  if(email == "12345@gmail.com" && name == "admin" && pass == "12345") {
+  if(email == "12345@gmail.com" && name == "admin" && pass == "12345"){
     alert("Đăng nhập thành công!")
     window.location.href = "/WebCk1/index.html"
+  }
+  else {
+    alert("Đăng nhập không thành công!")
+    return 0;
   }
 }
 
