@@ -14,6 +14,8 @@ function login() {
   }
   else {
     alert("Sai thông tin tài khoản")
+    return 0;
+  }
 }
 
 // ⁡⁣⁣⁢Address⁡
