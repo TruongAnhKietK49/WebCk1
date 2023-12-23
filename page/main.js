@@ -12,6 +12,8 @@ function login() {
     alert("Đăng nhập thành công!")
     window.location.href = "/WebCk1/index.html"
   }
+  else {
+    alert("Sai thông tin tài khoản")
 }
 
 // ⁡⁣⁣⁢Address⁡
