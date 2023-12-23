@@ -8,7 +8,7 @@ function login() {
     alert("Vui lòng điền đầy đủ thông")
     return 0;
   }
-  else {
+  else if(email == '12345@gmail.com' && name == 'admin' && pass == '12345') {
     alert("Đăng nhập thành công!")
     window.location.href = "/WebCk1/index.html"
   }
